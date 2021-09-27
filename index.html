@@ -10,7 +10,7 @@
             <div id="root">
                 <h2>Emails</h2>
                 <ul>
-                    <li>{{emails}}</li>
+                    <li v-for="(item, index) in emails" :key="index">{{emails[index]}}</li>
                 </ul>
             </div>
 
